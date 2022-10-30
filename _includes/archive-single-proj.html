@@ -31,10 +31,10 @@
     </h3>
     <ul>
     {% if post.collaborators %}
-      <li><font color="darkorange"><b> Collaborators: </b></font> { post.collaborators }}</li>
+      <li><font color="darkorange"><b> Collaborators: </b></font> {{ post.collaborators }}</li>
     {% endif %}
     {% if post.excerpt %}
-      <li><font color="darkorange"><b> Intro: </b></font><p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p></li>
+      <li><font color="darkorange"><b> Intro: </b></font> {{ post.excerpt}}</p></li>
     {% endif %}
     {% if post.paper %}
       {% if post.paperurl %}
@@ -44,6 +44,5 @@
       {% endif %}
     {% endif %}
     </ul>
-
   </article>
 </div>
