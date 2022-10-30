@@ -29,22 +29,21 @@
     <h3 class="archive__item-title" itemprop="headline">
         {{ title }}
     </h3>
+    <ul>
     {% if post.collaborators %}
-      {{ post.collaborators }}
+      <li><font color="darkorange"><b> Collaborators: </b></font> { post.collaborators }}</li>
     {% endif %}
-    <br />
     {% if post.excerpt %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <li><font color="darkorange"><b> Intro: </b></font><p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p></li>
     {% endif %}
-    <br />
     {% if post.paper %}
       {% if post.paperurl %}
-        <font color="darkorange"><b> Paper: </b></font>  <a href="{{ post.paperurl }}">{{ post.paper }}</a>
+        <li><font color="darkorange"><b> Paper: </b></font>  <a href="{{ post.paperurl }}">{{ post.paper }}</a></li>
       {% else %}
-        <font color="darkorange"><b> Paper: </b></font>  {{ post.paper }}
+        <li><font color="darkorange"><b> Paper: </b></font>  {{ post.paper }}</li>
       {% endif %}
     {% endif %}
-
+    </ul>
 
   </article>
 </div>
