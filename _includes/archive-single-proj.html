@@ -31,7 +31,9 @@
     </h3>
     <ul>
     {% if post.collaborators %}
-      <li><font color="darkorange"><b> Collaborators: </b></font> {{ post.collaborators }}</li>
+      <li>{{ post.projecttime }}<font color="darkorange"><b> Collaborators: </b></font> {{ post.collaborators }}</li>
+    {% else %}
+      <li>{{ post.projecttime }}</li>
     {% endif %}
     {% if post.excerpt %}
       <li><font color="darkorange"><b> Intro: </b></font> {{ post.excerpt}}</li>
