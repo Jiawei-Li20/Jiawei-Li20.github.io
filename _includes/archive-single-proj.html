@@ -30,9 +30,7 @@
         {{ title }}
     </h3>
     <ul>
-    {% if post.collaborators %}
-      <li>{{ post.projecttime }}<font color="darkorange"><b> Collaborators: </b></font> {{ post.collaborators }}</li>
-    {% else %}
+    {% if post.projcttime %}
       <li>{{ post.projecttime }}</li>
     {% endif %}
     {% if post.excerpt %}
