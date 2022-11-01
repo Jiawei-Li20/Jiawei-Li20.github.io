@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* <div style="width: 800px"> Ph.D. Student, Tsinghua University, <span style="float:right;"> 2025 (Expected)</span> </div>
-  * Computer Science Department
+* <div style="width: 800px"> Graduate Student, Tsinghua University</div>
+  * IIIS
 * <div style="width: 800px"> B.E. in Computer Science and Technology, Tsinghua University, <span style="float:right;"> 2020 </span> </div>
   * Institute for Interdisciplinary Information Sciences (Yao Class)
   * GPA: 3.82, Rank: 12/46
