@@ -24,6 +24,6 @@ News
 Contact Information
 ======
 
-lijiawei20 AT mail DOT tsinghua DOT org DOT cn
+lijiawei20 AT mails DOT tsinghua DOT edu DOT cn
 
 jiaweili.g2019 AT gmail DOT com
