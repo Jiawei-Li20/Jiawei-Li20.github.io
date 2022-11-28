@@ -34,7 +34,7 @@
       <li>{{ post.projecttime }}</li>
     {% endif %}
     {% if post.excerpt %}
-      <li><font color="darkorange"><b> Intro: </b></font> {{ post.excerpt}}</li>
+      <li><font color="darkorange"><b> Intro: </b></font> {{ post.excerpt}} <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></li>
     {% endif %}
     {% if post.paper %}
       {% if post.paperurl %}
