@@ -11,28 +11,28 @@ redirect_from:
 
 Education
 ======
-* <div style="width: 800px"> Graduate Student, Tsinghua University</div>
-  * IIIS
+* <div style="width: 800px"> Graduate Student, UIUC</div>
+* <div style="width: 800px"> Master in Computer Science and Technology, Tsinghua University, <span style="float:right;"> 2024 </span> </div>
+* Institute for Interdisciplinary Information Sciences
 * <div style="width: 800px"> B.E. in Computer Science and Technology, Tsinghua University, <span style="float:right;"> 2020 </span> </div>
   * Institute for Interdisciplinary Information Sciences (Yao Class)
-  * GPA: 3.82, Rank: 12/46
   * I won the award *Outstanding Graduates of Yao Class*
 
 Experiences
 ======
-* <div style="width: 800px"> Graduate Research Assistant <span style="float:right;"> Sept. 2020 - Now </span> </div>
+* <div style="width: 800px"> Research Assistant <span style="float:right;"> 2020 - 2023 </span> </div>
   * Tsinghua University
   * Supervisor: Professor Yang Yu
 
-* <div style="width: 800px"> Undergraduate Research Assistant <span style="float:right;"> Sept. 2019 - June 2020 </span> </div>
+* <div style="width: 800px"> Undergraduate Research Assistant <span style="float:right;"> Sept. 2019 - 2020 </span> </div>
   * Tsinghua University
   * Supervisor: Professor Yang Yu
 
-* <div style="width: 800px"> Research Intern <span style="float:right;"> Feb. 2019 - Aug. 2019 </span> </div>
+* <div style="width: 800px"> Research Intern <span style="float:right;"> 2019 </span> </div>
   * Harvard University
   * Supervisor: Professor Na Li
 
-* <div style="width: 800px"> Intern <span style="float:right;"> July 2018 - Sept. 2018 </span> </div>
+* <div style="width: 800px"> Intern <span style="float:right;"> 2018 </span> </div>
   * Google
   * Supervisor: Liyong Chen
 
@@ -42,11 +42,25 @@ Awards
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% if post.published %}
+{% assign sorted_pubs = site.publications | sort: 'date' | reversed %}
+
+<h2>Publications</h2>
+<ul>
+  {% for post in sorted_pubs %}
+    {% if post.published and post.category != 'preprint' %}
       {% include archive-single-cv.html %}
     {% endif %}
-  {% endfor %}</ul>
+  {% endfor %}
+</ul>
+
+<h2>Preprints & Working Papers</h2>
+<ul>
+  {% for post in sorted_pubs %}
+    {% if post.published and post.category == 'preprint' %}
+      {% include archive-single-cv.html %}
+    {% endif %}
+  {% endfor %}
+</ul>
 
 Contests
 =====
